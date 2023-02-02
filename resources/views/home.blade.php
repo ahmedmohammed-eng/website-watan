@@ -91,7 +91,7 @@
       "https://uploads-ssl.webflow.com/63b2e4694c0c1290f28b9492/63b2e524195d043a900a2d73_H-p-500.png 500w, https://uploads-ssl.webflow.com/63b2e4694c0c1290f28b9492/63b2e524195d043a900a2d73_H-p-800.png 800w, https://uploads-ssl.webflow.com/63b2e4694c0c1290f28b9492/63b2e524195d043a900a2d73_H-p-1080.png 1080w, https://uploads-ssl.webflow.com/63b2e4694c0c1290f28b9492/63b2e524195d043a900a2d73_H.png 1358w"
       alt="" class="image-10"></div>
       <div class="picture">
-        <h1 class="heading-3">البوابة الوطنية للمدفوعـات</h1>
+        <h1 class="heading-3">البوابة الوطنية للمدفوعـات.</h1>
         <p class="paragraph-2">بوابة المدفوعــــات متعـــــــدد
         الخدمات والتي تتيح للعمـلاء تنفيذ معاملاتهــــــم المــالية
         عبر الهــاتف المحمــول او بطائق الدفع، وتمكينهم من تنفيذ
