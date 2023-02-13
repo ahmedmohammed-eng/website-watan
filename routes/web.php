@@ -2,6 +2,10 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CenterinfoController;
+use App\Http\Controllers\ElectronicpaymentsystemController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CollectionserviceController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +18,10 @@ use App\Http\Controllers\CenterinfoController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/Electronicpayments', [ElectronicpaymentsystemController::class, 'index']);
+Route::get('/about', [AboutController::class, 'index']);
+Route::get('/Collectionservice', [CollectionserviceController::class,'index']);
+
 Route::get('about', function () {
     return view('about');
 });
