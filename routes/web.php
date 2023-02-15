@@ -5,6 +5,9 @@ use App\Http\Controllers\CenterinfoController;
 use App\Http\Controllers\ElectronicpaymentsystemController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CollectionserviceController;
+use App\Http\Controllers\BusinessappController;
+use App\Http\Controllers\HumantransfersController;
+use App\Http\Controllers\PaymentwalletController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +21,13 @@ use App\Http\Controllers\CollectionserviceController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/Electronicpayments', [ElectronicpaymentsystemController::class, 'index']);
+Route::get('/Electronicpaymentsystem', [ElectronicpaymentsystemController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
 Route::get('/Collectionservice', [CollectionserviceController::class,'index']);
+Route::get('/Collectionservice', [CollectionserviceController::class,'index']);
+Route::get('/Humantransfers', [HumantransfersController::class,'index']);
+
+Route::get('/Paymentwallet', [PaymentwalletController::class,'index']);
 
 Route::get('about', function () {
     return view('about');
