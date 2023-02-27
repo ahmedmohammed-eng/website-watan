@@ -9,6 +9,9 @@ use App\Http\Controllers\BusinessappController;
 use App\Http\Controllers\HumantransfersController;
 use App\Http\Controllers\PaymentwalletController;
 use App\Http\Controllers\LocalizationController;
+use App\Http\Controllers\LangController;
+use Illuminate\Support\Facades\Session;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,13 +23,15 @@ use App\Http\Controllers\LocalizationController;
 |
 */
 
-Route::get('/',                                              [HomeController::class, 'index']);
+Route::get('/h',                                              [HomeController::class, 'index']);
 Route::get('/Electronicpaymentsystem',                       [ElectronicpaymentsystemController::class, 'index']);
 Route::get('/about',                                         [AboutController::class, 'index']);
 Route::get('/Collectionservice',                             [CollectionserviceController::class,'index']);
 Route::get('/Collectionservice',                             [CollectionserviceController::class,'index']);
 Route::get('/Humantransfers',                                [HumantransfersController::class,'index']);
-Route::get('lang/{locale}',                                  [LocalizationController::class, 'index']);
+
 Route::get('/Paymentwallet',                                 [PaymentwalletController::class,'index']);
-Route::get('index',                                          [LocalizationController::class,'index']);
-Route::get('change/lang',                                    [LocalizationController::class ,'lang_change'])->name('LangChange');
+
+  
+Route::get('/', [LocalizationController::class, 'index']);
+Route::get('home', [LocalizationController::class, 'lang_change'])->name('LangChange');

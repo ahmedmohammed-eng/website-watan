@@ -59,6 +59,11 @@
                     <div class="text-block-32">ع</div>
                 </div>
             </div>
+
+            <select class="form-control Langchange">
+                <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+                <option value="ar" {{ session()->get('locale') == 'ar' ? 'selected' : '' }}>عربي</option>
+            </select>
             <div class="div-block-75">
                 <nav role="navigation" class="navigation-items w-nav-menu">
                     <div data-w-id="f28fab83-faaa-51f4-3c8f-03cadf67fa62" class="seach-parent-2"
@@ -66,36 +71,41 @@
                         <form action="/search" class="search-2 w-clearfix w-form"><input type="search"
                                 class="search-input-2 w-input" maxlength="256" name="query" placeholder="Search…"
                                 id="search" required="" style="opacity: 0;"><input type="submit" value=""
-                                class="search-button-2 w-button"></form>
-                    </div><a href="/styleguide" class="navigation-item w-nav-link">وطن للعميل</a><a href="/projects"
-                        class="navigation-item w-nav-link">وطن للمنظمات</a><a href="/team" aria-current="page"
-                        class="navigation-item w-nav-link">وطن للأعمال</a><a href="/contact"
-                        class="navigation-item w-nav-link">وطن للبنوك</a>
+                                class="search-button-2 w-button">
+                        </form>
+                    </div><a href="/styleguide" class="navigation-item w-nav-link">{{ __('lang.وطن للعميل') }} </a><a
+                        href="/projects" class="navigation-item w-nav-link"> {{ __('lang.وطن للمنطمات') }}</a><a
+                        href="/team" aria-current="page" class="navigation-item w-nav-link">
+                        {{ __('lang.وطن للأعمال') }}</a><a href="/contact"
+                        class="navigation-item w-nav-link">{{ __('lang.وطن للبنوك') }}</a>
                     <div data-hover="true" data-delay="10"
                         class="nav-dropdown-toggle-copy-copy navigation-item w-dropdown">
                         <div class="dropdown-toggle-2 dropdown-toggle-3 dropdown-toggle-4 dropdown-toggle-5 dropdown-toggle-6 dropdown-toggle-7 dropdown-toggle-8 current w-dropdown-toggle"
                             id="w-dropdown-toggle-0" aria-controls="w-dropdown-list-0" aria-haspopup="menu"
                             aria-expanded="false" role="button" tabindex="0">
-                            <div class="text-block-9">وطن للعميل</div>
+                            <div class="text-block-9">{{ __('lang.وطن للعميل') }}</div>
                         </div>
                         <nav class="dropdown-list-4 w-dropdown-list" id="w-dropdown-list-0"
-                            aria-labelledby="w-dropdown-toggle-0"><a href="{{url('Paymentwallet')}}"
-                                class="dropdown-link-4 w-dropdown-link" tabindex="0">محفظة الدفع</a><a href="#"
-                                class="dropdown-link55 w-dropdown-link" tabindex="0">الخدمات المالية</a><a
-                                href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">خدمة
-                                السداد</a><a href="#" class="dropdown-link-55 w-dropdown-link"
-                                tabindex="0">التسويق الرقمي</a></nav>
+                            aria-labelledby="w-dropdown-toggle-0"><a href="{{ url('Paymentwallet') }}"
+                                class="dropdown-link-4 w-dropdown-link"
+                                tabindex="0">{{ __('lang.محفظةالدفع') }}</a><a href="#"
+                                class="dropdown-link55 w-dropdown-link" tabindex="0">
+                                {{ __('lang.الخدمات المالية') }}</a><a href="#"
+                                class="dropdown-link55 w-dropdown-link" tabindex="0">{{ __('lang.خدمة السداد') }}
+                            </a><a href="#" class="dropdown-link-55 w-dropdown-link" tabindex="0">
+                                {{ __('lang.التسويق الرقمي') }}</a></nav>
                     </div>
                     <div data-hover="true" data-delay="10"
                         class="nav-dropdown-toggle-copy-copy navigation-item w-dropdown" style="">
                         <div class="dropdown-toggle-2 dropdown-toggle-3 dropdown-toggle-4 dropdown-toggle-5 dropdown-toggle-6 dropdown-toggle-7 dropdown-toggle-8 current w-dropdown-toggle"
                             id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1" aria-haspopup="menu"
                             aria-expanded="false" role="button" tabindex="0">
-                            <div class="text-block-9">وطن للمنظمات</div>
+                            <div class="text-block-9">{{ __('lang.وطن للمنطمات') }}</div>
                         </div>
                         <nav class="dropdown-list-4 w-dropdown-list" id="w-dropdown-list-1"
-                            aria-labelledby="w-dropdown-toggle-1"><a href="{{url('Humantransfers')}}"
-                                class="dropdown-link-4 w-dropdown-link" tabindex="0">منصة التحويلات الانسانية</a>
+                            aria-labelledby="w-dropdown-toggle-1"><a href="{{ url('Humantransfers') }}"
+                                class="dropdown-link-4 w-dropdown-link" tabindex="0">
+                                {{ __('lang.منصة التحويلات الأنسانية') }}</a>
                         </nav>
                     </div>
                     <div data-hover="true" data-delay="10"
@@ -103,23 +113,28 @@
                         <div class="dropdown-toggle-2 dropdown-toggle-3 dropdown-toggle-4 dropdown-toggle-5 dropdown-toggle-6 dropdown-toggle-7 dropdown-toggle-8 current w-dropdown-toggle"
                             id="w-dropdown-toggle-2" aria-controls="w-dropdown-list-2" aria-haspopup="menu"
                             aria-expanded="false" role="button" tabindex="0">
-                            <div class="text-block-9">وطن للأعمال</div>
+                            <div class="text-block-9">{{ __('lang.وطن للأعمال') }}</div>
                         </div>
                         <nav class="dropdown-list-4 w-dropdown-list" id="w-dropdown-list-2"
                             aria-labelledby="w-dropdown-toggle-2"><a href="/about"
-                                class="dropdown-link-4 w-dropdown-link" tabindex="0">تطبيق الاعمال</a>
+                                class="dropdown-link-4 w-dropdown-link"
+                                tabindex="0">{{ __('lang.تطبيق الأعمال') }}</a>
                             <a href="{{ url('Collectionservice') }}" class="dropdown-link55 w-dropdown-link"
-                                tabindex="0">خدمة التحصيل</a>
-                            <a href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">التجارة
-                                الالكترونية</a>
+                                tabindex="0"> {{ __('lang.خدمةالتحصيل') }}</a>
+                            <a href="#" class="dropdown-link55 w-dropdown-link"
+                                tabindex="0">{{ __('lang.التجارة الألكترونية') }}
+                            </a>
                             <a href="{{ url('Businessapp') }}" class="dropdown-link55 w-dropdown-link"
-                                tabindex="0">التطبيقات المصغرة</a>
-                            <a href="/work/project-1" class="dropdown-link55 w-dropdown-link" tabindex="0">التمويل
-                                الرقمي</a>
-                            <a href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">سلسلة
-                                التوريد</a>
-                            <a href="#" class="dropdown-link-55 w-dropdown-link" tabindex="0">وكيل الخدمات
-                                المالية</a>
+                                tabindex="0"> {{ __('lang.التطبيقات المصغرة') }}</a>
+                            <a href="/work/project-1" class="dropdown-link55 w-dropdown-link"
+                                tabindex="0">{{ __('lang.التمويل الرقمي') }}
+                            </a>
+                            <a href="#" class="dropdown-link55 w-dropdown-link"
+                                tabindex="0">{{ __('lang.سلسلة التوريد') }}
+                            </a>
+                            <a href="#" class="dropdown-link-55 w-dropdown-link" tabindex="0">
+                                {{ __('lang.وكيل الخدمات المالية') }}
+                            </a>
                         </nav>
                     </div>
                     <div data-hover="true" data-delay="10"
@@ -127,16 +142,19 @@
                         <div class="dropdown-toggle-2 dropdown-toggle-3 dropdown-toggle-4 dropdown-toggle-5 dropdown-toggle-6 dropdown-toggle-7 dropdown-toggle-8 w-dropdown-toggle"
                             id="w-dropdown-toggle-3" aria-controls="w-dropdown-list-3" aria-haspopup="menu"
                             aria-expanded="false" role="button" tabindex="0">
-                            <div class="text-block-9">وطن للبنوك</div>
+                            <div class="text-block-9">{{ __('lang.وطن للبنوك') }} </div>
                         </div>
                         <nav class="dropdown-list-4 w-dropdown-list" id="w-dropdown-list-3"
                             aria-labelledby="w-dropdown-toggle-3"><a href="{{ url('Electronicpaymentsystem') }}"
-                                aria-current="page" class="dropdown-link-4 w-dropdown-link" tabindex="0">نظام
-                                المدفوعات الفورية</a>
-                            <a href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">نظام اصدار
-                                البطائق</a>
-                            <a href="#" class="dropdown-link-55 w-dropdown-link" tabindex="0">نطام ادارة
-                                الصرافات الالية</a>
+                                aria-current="page" class="dropdown-link-4 w-dropdown-link"
+                                tabindex="0">{{ __('lang.نظام المدفوعات الفورية') }}
+                            </a>
+                            <a href="#" class="dropdown-link55 w-dropdown-link"
+                                tabindex="0">{{ __('lang.نظام اصدار بطائق الدفع') }}
+                            </a>
+                            <a href="#" class="dropdown-link-55 w-dropdown-link" tabindex="0">
+                                {{ __('lang.نظام ادارة الصرافات الالية') }}
+                            </a>
                         </nav>
                     </div>
                     <div data-hover="true" data-delay="10"
@@ -144,25 +162,29 @@
                         <div class="dropdown-toggle-2 dropdown-toggle-3 dropdown-toggle-4 dropdown-toggle-5 dropdown-toggle-6 dropdown-toggle-7 dropdown-toggle-8 current w-dropdown-toggle"
                             id="w-dropdown-toggle-4" aria-controls="w-dropdown-list-4" aria-haspopup="menu"
                             aria-expanded="false" role="button" tabindex="0">
-                            <div class="text-block-9">الشركة</div>
+                            <div class="text-block-9">{{ __('lang.الشركة') }}</div>
                         </div>
                         <nav class="dropdown-list-4 w-dropdown-list" id="w-dropdown-list-4"
                             aria-labelledby="w-dropdown-toggle-4"><a href="/about"
-                                class="dropdown-link-4 w-dropdown-link" tabindex="0">من نحن</a>
-                            <a href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">مقالات</a><a
-                                href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">تواصل معنا</a>
+                                class="dropdown-link-4 w-dropdown-link" tabindex="0">{{ __('lang.من نحن') }}</a>
+                            <a href="#" class="dropdown-link55 w-dropdown-link"
+                                tabindex="0">{{ __('lang.مقالات') }}</a><a href="#"
+                                class="dropdown-link55 w-dropdown-link" tabindex="0">
+                                {{ __('lang.تواصل معنا') }}</a>
 
-                            <a href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">مركز التكنولوجيا
-                                الماليه</a>
-                            <a href="/work/project-1" class="dropdown-link55 w-dropdown-link" tabindex="0">المسؤلية
-                                الاجتماعية</a>
-                            <a href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">الحوكمة
-                                المؤسسية</a>
-                            <a href="#" class="dropdown-link-55 w-dropdown-link" tabindex="0">وظائف</a>
+                            <a href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">
+                                {{ __('lang.مركز التكنولوجيا المالية') }}
+                            </a>
+                            <a href="/work/project-1" class="dropdown-link55 w-dropdown-link" tabindex="0">
+                                {{ __('lang.المسؤولية الأجتماعية') }}
+                                </a>
+                            <a href="#" class="dropdown-link55 w-dropdown-link" tabindex="0">   {{ __('lang.الحوكمة المؤسسية') }}
+                                </a>
+                            <a href="#" class="dropdown-link-55 w-dropdown-link" tabindex="0"></a>
                         </nav>
                     </div>
                     <a href="/work/project-1" class="button w-inline-block">
-                        <div class="text-block">تسجيل الدخول</div>
+                        <div class="text-block">{{ __('lang.تسجيل الدخول') }}</div>
                     </a>
                 </nav>
                 <div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
@@ -192,12 +214,11 @@
             <div class="cta-wrap">
                 <div>
                     <div class="cta-text">
-                        <div class="heading-jumbo-small">Grow your business.<br></div>
-                        <div class="paragraph-bigger cc-bigger-light">Today is the day to build the business of your
-                            dreams. Share your mission with the world — and blow your customers away.<br></div>
+                        <div class="heading-jumbo-small"><br></div>
+                        <div class="paragraph-bigger cc-bigger-light"><br></div>
                     </div>
                     <a href="/contact" class="button cc-jumbo-button w-inline-block">
-                        <div>Start Now</div>
+                        <div></div>
                     </a>
                 </div>
             </div>
@@ -250,50 +271,56 @@
             <div class="container-flex">
                 <div class="w-layout-grid grid-14">
                     <div class="footer-column">
-                        <div class="footer-title">وطن للمنظمات</div>
-                        <a href="/projects" class="footer-link-3">منصة التحويلات الأنسانية</a>
+                        <div class="footer-title">{{ __('lang.وطن للمنطمات') }} </div>
+                        <a href="/projects" class="footer-link-3"> {{ __('lang.منصة التحويلات الأنسانية') }}</a>
                     </div>
                     <div class="footer-column">
-                        <div class="footer-title">وطن للعميل</div><a href="#" class="footer-link-3">محفظة
-                            الدفع</a>
+                        <div class="footer-title">{{ __('lang.وطن للعميل') }} </div><a href="#"
+                            class="footer-link-3">{{ __('lang.محفظةالدفع') }}
+                        </a>
                         <div data-hover="false" data-delay="4" class="dropdown-3 w-dropdown">
                             <div class="dropdown-toggle-9 w-dropdown-toggle">
-                                <div class="text-block-31">الخدمات المالية</div>
+                                <div class="text-block-31"> {{ __('lang.الخدمات المالية') }}</div>
                                 <div class="icon-6 w-icon-dropdown-toggle">
                                 </div>
                             </div>
-                            <nav class="w-dropdown-list"><a href="#" class="w-dropdown-link">Link 1</a>
-                                <a href="#" class="w-dropdown-link">Link 2</a>
-                                <a href="#" class="w-dropdown-link">Link 3</a>
+                            <nav class="w-dropdown-list"><a href="#" class="w-dropdown-link"></a>
+                                <a href="#" class="w-dropdown-link"></a>
+                                <a href="#" class="w-dropdown-link"></a>
                             </nav>
-                        </div><a href="#" class="footer-link-3">الخدمات المالية</a>
-                        <a href="#" class="footer-link-3">خدمة السداد</a><a href="#"
-                            class="footer-link-3">التسوق الرقمي</a>
+                        </div><a href="#" class="footer-link-3"> {{ __('lang.الخدمات المالية') }}</a>
+                        <a href="#" class="footer-link-3"> {{ __('lang.خدمة السداد') }}</a><a href="#"
+                            class="footer-link-3"> {{ __('lang.التسويق الرقمي') }}</a>
                     </div>
                     <div class="footer-column">
-                        <div class="footer-title">وطن للأعمال</div><a href="#" class="footer-link-3">تطبيق
-                            الأعمال</a>
-                        <a href="{{ url('Collectionservice') }}" class="footer-link-3">خدمة التحصيل</a>
-                        <a href="#" class="footer-link-3">التجارة الالكتروية</a>
-                        <a href="#" class="footer-link-3">التطبيقات المصغرة</a><a href="/blog"
-                            class="footer-link-3">التمويل الرقمي</a>
-                        <a href="#" class="footer-link-3">سلسلة التوريد</a>
-                        <a href="#" class="footer-link-3">وكيل الخدمات المالية</a>
+                        <div class="footer-title">{{ __('lang.وطن للأعمال') }} </div><a href="#"
+                            class="footer-link-3">{{ __('lang.تطبيق الأعمال') }}
+                        </a>
+                        <a href="{{ url('Collectionservice') }}" class="footer-link-3"> {{ __('lang.خدمةالتحصيل') }}
+                        </a>
+                        <a href="#" class="footer-link-3"> {{ __('lang.التجارة الألكترونية') }}</a>
+                        <a href="#" class="footer-link-3"> {{ __('lang.التطبيقات المصغرة') }}</a><a
+                            href="/blog" class="footer-link-3"> {{ __('lang.التمويل الرقمي') }}</a>
+                        <a href="#" class="footer-link-3"> {{ __('lang.سلسلة التوريد') }}</a>
+                        <a href="#" class="footer-link-3"> {{ __('lang.وكيل الخدمات المالية') }}</a>
                     </div>
                     <div class="footer-column">
-                        <div class="footer-title">وطن للبنوك</div><a href="/contact" class="footer-link-3">نظام
-                            المدفوعات الفورية</a>
-                        <a href="#" class="footer-link-3">نظام اصدار البطائق</a><a href="#"
-                            class="footer-link-3">نظام ادارة الصرافات الالية</a>
+                        <div class="footer-title">{{ __('lang.وطن للبنوك') }} </div><a href="/contact"
+                            class="footer-link-3">{{ __('lang.نظام المدفوعات الفورية') }}
+                        </a>
+                        <a href="#" class="footer-link-3">{{ __('lang.نظام اصدار بطائق الدفع') }} </a><a
+                            href="#" class="footer-link-3"> {{ __('lang.نظام ادارة الصرافات الالية') }}</a>
                     </div>
                     <div class="footer-column">
-                        <div class="footer-title">الشركة</div><a href="/about" class="footer-link-3">من نحن</a><a
-                            href="#" class="footer-link-3">مقالات</a>
-                        <a href=""{{ url('/centerinfo') }}"" class="footer-link-3">مركز التكنلوجيا المالية</a>
-                        <a href="#" class="footer-link-3">المسؤلية الاجتماعية</a>
-                        <a href="{{ url('/centerinfo') }}" class="footer-link-3">الحوكمة المؤسسية</a>
-                        <a href="#" class="footer-link-3">تواصل معنا</a><a href="{{ url('/centerinfo') }}"
-                            class="footer-link-3">الوظائف</a>
+                        <div class="footer-title">{{ __('lang.الشركة') }}</div><a href="/about"
+                            class="footer-link-3">{{ __('lang.من نحن') }} </a><a href="#"
+                            class="footer-link-3">{{ __('lang.مقالات') }}</a>
+                        <a href=""{{ url('/centerinfo') }}"" class="footer-link-3">
+                            {{ __('lang.مركز التكنولوجيا المالية') }}</a>
+                        <a href="#" class="footer-link-3">          {{ __('lang.المسؤولية الأجتماعية') }} </a>
+                        <a href="{{ url('/centerinfo') }}" class="footer-link-3"> {{ __('lang.الحوكمة المؤسسية') }}</a>
+                        <a href="#" class="footer-link-3">  {{ __('lang.تواصل معنا') }}</a> </a><a href="{{ url('/centerinfo') }}"
+                            class="footer-link-3">{{ __('lang.الوظائف') }}</a>
                     </div>
                 </div>
             </div>
@@ -307,6 +334,13 @@
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
               <![endif]-->
 
+
+    <script type="text/javascript">
+        var url = "{{ route('LangChange') }}";
+        $(".Langchange").change(function() {
+            window.location.href = url + "?lang=" + $(this).val();
+        });
+    </script>
 </body>
 
 </html>

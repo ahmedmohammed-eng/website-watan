@@ -1,4 +1,7 @@
 @extends('layouts.app')
+
+
+
 @section('content')
 <div data-w-id="83bb055d-928f-25d3-5ed4-e6a80064dbcc" class="share-parent-1">
     <div data-w-id="83bb055d-928f-25d3-5ed4-e6a80064dbcd"
@@ -49,11 +52,9 @@
                 loading="lazy" alt="" class="image-63" />
         </div>
         <div class="_560">
-            <h1 class="_555">الشركة الوطنية للمدفوعات<br />
+            <h1 class="_555"> {{ __('lang.الشركة الوطنية للمدفوعات') }} <br />
             </h1>
-            <p class="_55">بوابة المدفوعــــات متعـــــدد الخدمات والتي تتيح للعمـلاء تنفيذ معاملاتهــــــم
-                المــالية عبر الهـاتف المحمــول او بطـــائق الدفـــع، وتمكينهم من تنفيذ معاملاتهم المالية بشكل رقمي أكثر
-                امان</p>
+            <p class="_55">{{ __('lang.بوابة المدفوعــــات متعـــــدد الخدمات والتي تتيح للعمـلاء تنفيذ معاملاتهــــــم المــالية عبر الهـاتف المحمــول او بطـــائق الدفـــع، وتمكينهم من تنفيذ معاملاتهم المالية بشكل رقمي أكثر امان') }} </p>
             <div class="div-block-77"><a href="#" class="_10 w-inline-block"><img
                         src="https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63c40d3f58ee2e7ea68cdc06_Get_it_on_Google_play.png"
                         loading="lazy"
@@ -101,11 +102,11 @@
                             <div class="pricing-card-three"><img
                                     src="https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63c40d3f58ee2e33338cdbee_Group%2042786.png"
                                     loading="lazy" alt="" class="pricing-image" />
-                                <h3 class="heading-4">طلب اموال</h3>
+                                <h3 class="heading-4">{{__( 'lang.   طلب اموال')}} </h3>
                                 <p class="pricing-card-text">يستطيــــع العميـــل طلــب أمــوال مــن عميـــل أخـر او
                                     تحصيـــل ديون والتزاما</p><a href="#"
                                     class="text-link-arrow w-inline-block">
-                                    <div class="text-block-4">المزيد</div>
+                                    <div class="text-block-4">{{__('lang.المزيد')}}</div>
                                 </a>
                             </div>
                         </div>
@@ -120,7 +121,7 @@
                             <p class="pricing-card-text">ايداعـــات نقديــــة لحساب في أي نقطـــة خدمــة (وكيــــل –
                                 تاجــر – نقطة خدمة متنقلة – صراف آلي)</p><a href="#"
                                 class="text-link-arrow w-inline-block">
-                                <div class="text-block-2">المزيد</div>
+                                <div class="text-block-2">{{__('lang.المزيد')}}</div>
                             </a>
                         </div>
                     </div>
@@ -134,7 +135,7 @@
                             <p class="pricing-card-text">طلـب سحب من الحسـاب في أي نقطـــة خدمــة (وكيــــل – تاجــر –
                                 نقطة خدمة متنقلة – صراف آلي)</p><a href="#"
                                 class="text-link-arrow w-inline-block">
-                                <div class="text-block-3">المزيد</div>
+                                <div class="text-block-3">{{__('lang.المزيد')}}</div>
                             </a>
                         </div>
                     </div>
@@ -147,7 +148,7 @@
                             <h3 class="heading-4">سدااد رصيد</h3>
                             <p class="pricing-card-text">تمكن هذه الخدمـــة العميــل مـن دفع الرسوم الحكـومية والقروض
                             </p><a href="#" class="text-link-arrow w-inline-block">
-                                <div class="text-block-6">المزيد</div>
+                                <div class="text-block-6">{{__('lang.المزيد')}}</div>
                             </a>
                         </div>
                     </div>
@@ -162,7 +163,7 @@
                                 <p class="pricing-card-text"><strong class="bold-text-3">تمكن هذه الخدمة العميل من دفع
                                         فواتير الماء، والكهرباء</strong></p><a href="#"
                                     class="text-link-arrow w-inline-block">
-                                    <div class="text-block-4">المزيد</div>
+                                    <div class="text-block-4">{{__('lang.المزيد')}}</div>
                                 </a>
                             </div>
                         </div>
@@ -177,7 +178,7 @@
                                 <h3 class="heading-4">ارسال اموال</h3>
                                 <p class="pricing-card-text">يستطيــع العميــل طلب أموال من عميـل أخـر او تحصيل ديون
                                     والتزاما</p><a href="#" class="text-link-arrow w-inline-block">
-                                    <div class="text-block-4">المزيد</div>
+                                    <div class="text-block-4">{{__('lang.المزيد')}}</div>
                                 </a>
                             </div>
                         </div>
@@ -205,7 +206,7 @@
                         <h3 class="heading-4">طلب اموال</h3>
                         <p class="pricing-card-text">يستطيــع العميــل طلب أموال من عميـل أخـر او تحصيل ديون والتزاما
                         </p><a href="#" class="text-link-arrow w-inline-block">
-                            <div class="text-block-4">المزيد</div>
+                            <div class="text-block-4">{{__('lang.المزيد')}}</div>
                         </a>
                     </div>
                 </div>
@@ -217,7 +218,7 @@
                         <p class="pricing-card-text">ايداعـــات نقديــــة لحساب في أي نقطـــة خدمــة (وكيــــل – تاجــر
                             – نقطة خدمة متنقلة – صراف آلي)</p><a href="#"
                             class="text-link-arrow w-inline-block">
-                            <div class="text-block-2">المزيد</div>
+                            <div class="text-block-2">{{__('lang.المزيد')}}</div>
                         </a>
                     </div>
                 </div>
@@ -228,7 +229,7 @@
                         <h3 class="heading-5">سحب نقد</h3>
                         <p class="pricing-card-text">طلـب سحب من الحسـاب في أي نقطـــة خدمــة (وكيــــل – تاجــر – نقطة
                             خدمة متنقلة – صراف آلي)</p><a href="#" class="text-link-arrow w-inline-block">
-                            <div class="text-block-3">المزيد</div>
+                            <div class="text-block-3">{{__('lang.المزيد')}}</div>
                         </a>
                     </div>
                 </div>
@@ -239,7 +240,7 @@
                         <h3 class="heading-4">سداد رصيد</h3>
                         <p class="pricing-card-text">تمكن هذه الخدمـــة العميــل مـن دفع الرسوم الحكـومية والقروض</p><a
                             href="#" class="text-link-arrow w-inline-block">
-                            <div class="text-block-6">المزيد</div>
+                            <div class="text-block-6">{{__('lang.المزيد')}}</div>
                         </a>
                     </div>
                 </div>
@@ -250,7 +251,7 @@
                         <h3 class="heading-4">سداد رصيد</h3>
                         <p class="pricing-card-text">تمكن هذه الخدمـــة العميــل مـن دفع الرسوم الحكـومية والقروض</p><a
                             href="#" class="text-link-arrow w-inline-block">
-                            <div class="text-block-6">المزيد</div>
+                            <div class="text-block-6">{{__('lang.المزيد')}}</div>
                         </a>
                     </div>
                 </div>
@@ -261,7 +262,7 @@
                         <h3 class="heading-4">سداد رصيد</h3>
                         <p class="pricing-card-text">تمكن هذه الخدمـــة العميــل مـن دفع الرسوم الحكـومية والقروض</p><a
                             href="#" class="text-link-arrow w-inline-block">
-                            <div class="text-block-6">المزيد</div>
+                            <div class="text-block-6">{{__('lang.المزيد')}}</div>
                         </a>
                     </div>
                 </div>
@@ -273,7 +274,7 @@
 <div class="_3 wf-section">
     <div class="container-8 w-container">
         <div class="div-block-3">
-            <h1 class="_6">طـرق الدفع</h1>
+            <h1 class="_6">{{ __('lang.طرق الدفع') }}</h1>
             <div class="div-block-4"></div>
         </div>
     </div>
@@ -284,9 +285,8 @@
             <div class="hero-split"><img
                     src="https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63c40d3f58ee2e2bfb8cdbf6_420_ic_name_of_icon_24px.png"
                     loading="lazy" width="89" alt="" class="image-5" />
-                <h1 class="_555">بطاقة الدفع</h1>
-                <p class="_55">تمكن هـذه الخدمة للعمـــلاء من عملية الســــداد للخدمـــات دون الحاجة للوجود الهـاتف
-                    وتتميز بسرعه استخدامها</p>
+                <h1 class="_555"> {{__('lang.بطاقةالدفع')}}</h1>
+                <p class="_55">{{__('lang.تمكن هـذه الخدمة للعمـــلاء من عملية الســــداد للخدمـــات')}}</p>
                 <div class="div-block-45">
                     <div class="div-block-47">
                         <div class="text-block-28"><audio controls>
@@ -296,7 +296,7 @@
                     </div><a data-w-id="5bc26878-e4ac-4323-77a2-9b1bed93adb6" style="background-color:rgba(0,0,0,0)"
                         href="/blog" class="btn-parent w-inline-block">
                         <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                            class="btn-txt-1">المزيد</div>
+                            class="btn-txt-1">{{__('lang.المزيد')}}</div>
                         <div style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(0,0,0)"
                             class="btn-txt-2">&lt;</div>
                     </a>
@@ -354,9 +354,8 @@
         <div class="div-block"><img
                 src="https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63c40d3f58ee2e91228cdc16_Untitled-1-02.png"
                 loading="lazy" alt="" class="image-14" />
-            <h1 class="_555">التحويلات المالية</h1>
-            <p class="_55">أرسل واستلم الاموال من أي شخص ودفع لاي شخـــــص فـي اي مكــــان مـــن حســابك الاكتروني
-                او مبـــاشرة من حســـابك المصرفي</p>
+            <h1 class="_555">{{__('lang.التحويلات المالية')}}</h1>
+            <p class="_55">{{__('lang.ارسل واستلم الاموال من أي شخص ودفع لاي شخـــــص فـي اي مكــــان مـــن حســابك الاكتروني او مبـــاشرة من حســـابك المصرفي')}} 
             <div class="div-block-45">
                 <div class="div-block-47">
                     <div class="text-block-28"><audio controls>
@@ -366,7 +365,7 @@
                 </div><a data-w-id="a596c568-1559-74e5-8d0e-7412febd7bb8" style="background-color:rgba(0,0,0,0)"
                     href="/blog" class="btn-parent w-inline-block">
                     <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                        class="btn-txt-1">المزيد</div>
+                        class="btn-txt-1">{{__('lang.المزيد')}}</div>
                     <div style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(0,0,0)"
                         class="btn-txt-2">&lt;</div>
                 </a>
@@ -409,7 +408,7 @@
 <div class="_3 wf-section">
     <div class="container-8 w-container">
         <div class="div-block-3">
-            <h1 class="_6">الخدمات المالية</h1>
+            <h1 class="_6">{{__('lang.الخدمات المالية')}} </h1>
             <div class="div-block-4"></div>
         </div>
     </div>
@@ -426,9 +425,8 @@
                 loading="lazy" width="89" sizes="(max-width: 479px) 33vw, 99.99999237060547px"
                 srcset="https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63c40d3f58ee2e18d28cdc01_Group%252042758-p-500.png 500w, https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63c40d3f58ee2e18d28cdc01_Group%2042758.png 516w"
                 alt="" class="image-7" />
-            <h1 class="_555">سلفنـــــي</h1>
-            <p class="_55"><strong class="_55">توفر للافراد والتجار من حصولة على التمويل الرقمي والايداع في
-                    حسابة الاكتروني او المصرفي بكل سهولة.</strong></p>
+            <h1 class="_555">{{__('lang.سلفني')}}</h1>
+            <p class="_55"><strong class="_55">{{__('lang.توفر للافراد والتجار من حصولة على التمويل الرقمي والايداع في حسابة الاكتروني او المصرفي بكل سهولة.')}}</strong></p>
             <div class="div-block-45">
                 <div class="div-block-47">
                     <div class="text-block-28"><audio controls>
@@ -438,7 +436,7 @@
                 </div><a data-w-id="3661db7e-d281-a35e-906a-8bcd0ad9496a" style="background-color:rgba(0,0,0,0)"
                     href="/blog" class="btn-parent w-inline-block">
                     <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                        class="btn-txt-1">المزيد</div>
+                        class="btn-txt-1">{{__('lang.المزيد')}}</div>
                     <div style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(0,0,0)"
                         class="btn-txt-2">&lt;</div>
                 </a>
@@ -481,7 +479,7 @@
 <div class="_3 wf-section">
     <div class="container-8 w-container">
         <div class="div-block-3">
-            <h1 class="_6">خدمات الأعمال</h1>
+            <h1 class="_6"> {{__('lang.خدمات الأعمال')}}</h1>
             <div class="div-block-4"></div>
         </div>
     </div>
@@ -490,10 +488,8 @@
     <div class="container-6">
         <div class="a">
             <div class="div-block">
-                <h1 class="_555">تطبيق الاعمال</h1>
-                <p class="_55">تم تصميمـة لتوفير الســـرعة وإمكـانية التشغيل والدمج الذي يربط مزودي الخدماـت
-                    والمستخــدمين بسلاسة داخل نظــام بيئي واحد وتكمين الشركات والمتاجر من قبول المدفوعــــات في المتجـر
-                    الفعلـــي وتتيح لهــم من إدارة الانشطة من خـلال مجموعة من الأدوات</p>
+                <h1 class="_555"> {{__('lang.تطبيق الأعمال')}}</h1>
+                <p class="_55">{{__('lang.تم تصميمـة لتوفيرالســـرعةوإمكـانية التشغيل والدمج الذي يربط مزودي الخدماـت                والمستخــدمين بسلاسة داخل نظــام بيئي واحد وتكمين الشركات والمتاجر من قبول المدفوعــــات في المتجـر الفعلـــي وتتيح لهــم من إدارة الانشطة من خـلال مجموعة من الأدوات')}}  </p>
                 <div class="div-block-56"></div>
                 <div class="div-block-45">
                     <div class="div-block-47">
@@ -504,7 +500,7 @@
                     </div><a data-w-id="e51a0107-4ebe-80df-0def-ad03ca038614" style="background-color:rgba(0,0,0,0)"
                         href="/work/project-3" class="btn-parent w-inline-block">
                         <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                            class="btn-txt-1">المزيد</div>
+                            class="btn-txt-1">{{__('lang.المزيد')}}</div>
                         <div style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(0,0,0)"
                             class="btn-txt-2">&lt;</div>
                     </a>
@@ -558,10 +554,10 @@
             <div class="div-block"><img
                     src="https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63e008abe4e25f69320e2597_12_ic_name_of_icon_24px.png"
                     loading="lazy" alt="" class="image-13" />
-                <h1 class="_555">التجارة الالكترونية</h1>
-                <p class="margin-bottom-24px-2"><strong class="_55"> تتيح هذه الخدمة للريادي الاعمــال والتاجــــر
-                        من بنـــــاء متجــر الإلكتـــروني بكـل المميزات التي تتيح له الوصــول الــى أسـواق
-                        مختلفــة<br /></strong></p>
+                <h1 class="_555"> {{__('lang.التجارة الألكترونية')}}</h1>
+                <p class="margin-bottom-24px-2"><strong class="_55">{{__('lang.تتيح هذه الخدمة للريادي الاعمــال والتاجــــر من بنـــــاء متجــر الإلكتـــروني بكـل المميزات التي تتيح له الوصــول الــى أسـواق مختلفــة')}}
+
+                </strong><br /></strong></p>
                 <div class="div-block-45">
                     <div class="div-block-47">
                         <div class="text-block-28"><audio controls>
@@ -572,7 +568,7 @@
                         href="https://master.yship.co/company/register" target="_blank"
                         class="btn-parent w-inline-block">
                         <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                            class="btn-txt-1">المزيد</div>
+                            class="btn-txt-1">{{__('lang.المزيد')}}</div>
                         <div style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(0,0,0)"
                             class="btn-txt-2">&lt;</div>
                     </a>
@@ -629,8 +625,8 @@
                 srcset="https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63dbfbd7904c66058b347df9_%D8%A7%D9%84%D8%AA%D8%AD%D8%B5%D9%8A%D9%84-p-500.png 500w, https://uploads-ssl.webflow.com/63c40d3f58ee2efaea8cdba4/63dbfbd7904c66058b347df9_%D8%A7%D9%84%D8%AA%D8%AD%D8%B5%D9%8A%D9%84.png 517w"
                 alt="" /></div>
         <div class="div-block-54">
-            <h1 class="_555">خدمة التحصيل</h1>
-            <p class="paragraph-25">هي منصة إلكترونية لعرض وتحصيل وتسوية الفواتير إلكتروني.<br /><br /></p>
+            <h1 class="_555"> {{__('lang.خدمةالتحصيل')}}</h1>
+            <p class="paragraph-25"></p>{{__('lang.هي منصة إلكترونية لعرض وتحصيل وتسوية الفواتير إلكتروني.')}}<br /><br /></p>
             <div class="div-block-45">
                 <div class="div-block-47">
                     <div class="text-block-28"><audio controls>
@@ -640,7 +636,7 @@
                 </div><a data-w-id="e77ed51d-7be3-f113-44ff-db8e4865acff" style="background-color:rgba(0,0,0,0)"
                     href="/styleguide" class="btn-parent w-inline-block">
                     <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                        class="btn-txt-1">المزيد</div>
+                        class="btn-txt-1">{{__('lang.المزيد')}}</div>
                     <div style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(0,0,0)"
                         class="btn-txt-2">&lt;</div>
                 </a>
@@ -680,4 +676,6 @@
         </div>
     </div>
 </div>
+
+
 @endsection

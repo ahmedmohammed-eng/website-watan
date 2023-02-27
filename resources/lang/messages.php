@@ -1,5 +1,5 @@
 <?php
 // EN folder
 return [
-    'Bonjour' => 'Hello'
+    'co' => 'Hello'
 ];
