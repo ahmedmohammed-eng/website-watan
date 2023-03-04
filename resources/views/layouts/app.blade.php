@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="div-block-72">
-                    <div class="text-block-32">ع</div>
+                    <div class="text-block-32"></div>
                 </div>
             </div>
 
